@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "Wines": {
+      ".indexOn": ["Name", "Vintage", "code", "searchName"]
+    },
+    "Producers": {
+      ".indexOn": ["Name"]
+    },
+    "Regions": {
+      ".indexOn": ["Name"]
+    },
+    ".read": "true",
+    ".write": "auth != null && auth.uid === 'YOUR_ADMIN_UID'"
+  }
+}
